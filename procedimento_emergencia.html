@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedimentos de Emergência - GuardianTech</title>
+    <link rel="stylesheet" href="emergencia.css">
+</head>
+<body>
+
+    <header>
+        <h2>GuardianTech</h2>
+
+        <nav>
+            <a href="pagina_inicial.html">Início</a>
+            <a href="procedimento_emergencia.html">Procedimentos</a>
+            <a href="pagina_inicial.html#normas">NR</a>
+            <a href="pagina_inicial.html#treinamento">Treinamento</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="titulo">
+            <h1>PROCEDIMENTOS DE EMERGÊNCIA</h1>
+        </section>
+
+        <section class="texto-orientacao">
+            <p id="banner-titulo">
+                Selecione uma categoria para visualizar os procedimentos
+                adequados para cada tipo de ocorrência.
+            </p>
+        </section>
+
+        <section class="setores-banner">
+            <h2>Escolha uma categoria</h2>
+
+            <section class="setores-bloco">
+                <button type="button" class="botao-setor ativo"
+                    id="btn-socorros"
+                    onclick="trocarCategoria('socorros')">
+                    Primeiros Socorros
+                </button>
+
+                <button type="button" class="botao-setor"
+                    id="btn-incendio"
+                    onclick="trocarCategoria('incendio')">
+                    Incêndio
+                </button>
+
+                <button type="button" class="botao-setor"
+                    id="btn-quimico"
+                    onclick="trocarCategoria('quimico')">
+                    Acidente Químico
+                </button>
+
+                <button type="button" class="botao-setor"
+                    id="btn-queda"
+                    onclick="trocarCategoria('queda')">
+                    Queda de Altura
+                </button>
+            </section>
+        </section>
+
+        <section class="card-container">
+            <h2>Orientações de Segurança</h2>
+
+            <section class="grid-servicos">
+                <article class="card-servico fazer">
+                    <h3>O que fazer</h3>
+                    <ul id="lista-fazer"></ul>
+                </article>
+
+                <article class="card-servico evitar">
+                    <h3>O que evitar</h3>
+                    <ul id="lista-nao-fazer"></ul>
+                </article>
+            </section>
+        </section>
+
+        <section class="card-container contatos">
+            <h2>Contatos de Emergência</h2>
+
+            <p>
+                Consulte os contatos abaixo e acione o serviço adequado
+                à situação.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Telefone</th>
+                        <th>Atendimento</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>SAMU</td>
+                        <td>192</td>
+                        <td>Urgências médicas</td>
+                    </tr>
+                    <tr>
+                        <td>Bombeiros</td>
+                        <td>193</td>
+                        <td>Incêndios e resgates</td>
+                    </tr>
+                    <tr>
+                        <td>Polícia Militar</td>
+                        <td>190</td>
+                        <td>Emergências policiais</td>
+                    </tr>
+                    <tr>
+                        <td>CEREST</td>
+                        <td>(19) 3404-6200</td>
+                        <td>Saúde do trabalhador</td>
+                    </tr>
+                    <tr>
+                        <td>CETESB</td>
+                        <td>0800-0113560</td>
+                        <td>Emergências ambientais</td>
+                    </tr>
+                    <tr>
+                        <td>SESI Saúde</td>
+                        <td>0800-0551000</td>
+                        <td>Contato institucional</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer id="contato">
+        <p>&copy; GuardianTech - Todos os Direitos Reservados</p>
+        <p>Projeto Acadêmico - HTML &amp; CSS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
